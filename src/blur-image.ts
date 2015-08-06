@@ -1,8 +1,9 @@
-import {inject} from 'aurelia-framework';
+import {autoinject} from 'aurelia-framework';
 
-@inject(Element)
+@autoinject
 export class BlurImageCustomAttribute {
-  constructor(element){
+  element: Element;
+  constructor(element: Element){
     this.element = element;
   }
 

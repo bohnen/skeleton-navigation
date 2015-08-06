@@ -14,9 +14,9 @@ module.exports = function(config) {
 
     jspm: {
       // Edit this to your needs
-      loadFiles: ['src/**/*.js', 'test/unit/**/*.js'],
+      loadFiles: ['dist/**/*.js'],
       paths: {
-        '*': '*.js'
+        "*" : "*.js"
       }
     },
 
@@ -28,25 +28,6 @@ module.exports = function(config) {
     // list of files to exclude
     exclude: [
     ],
-
-
-    // preprocess matching files before serving them to the browser
-    // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-      'test/**/*.js': ['babel'],
-      'src/**/*.js': ['babel']
-    },
-    'babelPreprocessor': {
-      options: {
-        sourceMap: 'inline',
-        modules: 'system',
-        moduleIds: false,
-        optional: [
-          "es7.decorators",
-          "es7.classProperties"
-        ]
-      }
-    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'

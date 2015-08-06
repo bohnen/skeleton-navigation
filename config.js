@@ -1,18 +1,11 @@
 System.config({
-  "defaultJSExtensions": true,
-  "transpiler": "babel",
-  "babelOptions": {
-    "optional": [
-      "es7.decorators",
-      "es7.classProperties",
-      "runtime"
-    ]
-  },
+  "transpiler": "traceur",
   "paths": {
-    "*": "dist/*",
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
-  }
+    "*": "dist/*.js",
+    "github:*": "jspm_packages/github/*.js",
+    "npm:*": "jspm_packages/npm/*.js"
+  },
+  "defaultJSExtensions": true
 });
 
 System.config({

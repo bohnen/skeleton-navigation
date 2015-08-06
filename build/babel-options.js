@@ -1,11 +1,25 @@
+// documentation for these options can be
+// found at https://6to5.org/docs/usage/options/
 module.exports = {
-  modules: 'system',
+  filename: '',
+  filenameRelative: '',
+  blacklist: [],
+  whitelist: [],
+  modules: '',
+  sourceMap: true,
+  sourceMapName: '',
+  sourceRoot: '',
+  moduleRoot: '',
   moduleIds: false,
-  comments: false,
-  compact: false,
-  stage:2,
-  optional: [
-    "es7.decorators",
-    "es7.classProperties"
-  ]
+  experimental: false,
+  format: {
+    comments: false,
+    compact: false,
+    indent: {
+      parentheses: true,
+      adjustMultilineComment: true,
+      style: "  ",
+      base: 0
+    }
+  }
 };

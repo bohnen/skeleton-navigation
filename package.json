@@ -40,6 +40,7 @@
     "karma-coverage": "^0.3.1",
     "karma-jasmine": "^0.3.5",
     "karma-jspm": "^1.1.5",
+    "karma-typescript-preprocessor": "0.0.19",
     "object.assign": "^1.0.3",
     "require-dir": "^0.1.0",
     "run-sequence": "^1.0.2",
@@ -85,5 +86,9 @@
         "main": "client/shim.min"
       }
     }
+  },
+  "dependencies": {
+    "gulp-typescript": "^2.8.0",
+    "typescript": "^1.5.3"
   }
 }
