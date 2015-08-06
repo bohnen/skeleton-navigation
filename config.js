@@ -1,7 +1,8 @@
 System.config({
+  "baseURL": "/",
   "transpiler": "traceur",
   "paths": {
-    "*": "dist/*.js",
+    "*": "dist/*",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
   },
@@ -39,6 +40,8 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.13",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",
+    "traceur": "github:jmcriffey/bower-traceur@0.0.88",
+    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
     "github:aurelia/animator-css@0.14.1": {
       "aurelia-metadata": "github:aurelia/metadata@0.7.2",
       "aurelia-templating": "github:aurelia/templating@0.13.16"
