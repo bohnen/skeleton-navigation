@@ -6,12 +6,12 @@
         "declaration": false,
         "noImplicitAny": false,
         "removeComments": false,
-        "noLib": true,
-        "experimentalDecorators": true,
+        "noLib": false,
         "emitDecoratorMetadata": true
     },
     "filesGlob": [
         "./**/*.ts",
-        "./node_modules/**/*.ts"
+        "./node_modules/**/*.d.ts",
+        "./jspm_packages/**/*.d.ts"
     ]
 }
