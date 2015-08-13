@@ -1,16 +1,13 @@
 System.config({
-  "baseURL": "/",
-  "transpiler": "traceur",
-  "paths": {
+  defaultJSExtensions: true,
+  transpiler: "traceur",
+  paths: {
     "*": "dist/*",
-    "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js"
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
   },
-  "defaultJSExtensions": true
-});
 
-System.config({
-  "map": {
+  map: {
     "aurelia-animator-css": "github:aurelia/animator-css@0.14.1",
     "aurelia-binding": "github:aurelia/binding@0.8.5",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.15.0",
@@ -40,8 +37,8 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.13",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",
-    "traceur": "github:jmcriffey/bower-traceur@0.0.88",
-    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.88",
+    "traceur": "github:jmcriffey/bower-traceur@0.0.91",
+    "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.91",
     "github:aurelia/animator-css@0.14.1": {
       "aurelia-metadata": "github:aurelia/metadata@0.7.2",
       "aurelia-templating": "github:aurelia/templating@0.13.16"
@@ -168,4 +165,3 @@ System.config({
     }
   }
 });
-
